@@ -1,0 +1,87 @@
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: white;
+}
+
+section {
+    display: grid;
+    grid-template: repeat(4, 200px) / repeat(4, 200px);
+}
+
+
+div {
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    font-size: 3rem;
+    display: none !important;
+}
+
+
+.disable {
+    pointer-events: none;
+}
+
+
+div.show i {
+    display: block !important;
+}
+
+.matched {
+    background-color: green;
+}
+
+.unmatched {
+    background-color: red;
+}
+
+
+.modal {
+    background-color: rgb(223, 28, 28);
+    /* background-color: rgb(29, 4, 255); */
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    display: none;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+    right: 10px;
+    top: 10px;
+    transition: all 1s linear;
+    width: 25%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    bottom: 40%;
+    right: 15%;
+    border: none;
+}
+
+.counter-modal {
+    font-size: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    bottom: 30%;
+    right: 20%;
+    border: none;
+}
