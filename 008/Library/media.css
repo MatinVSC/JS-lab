@@ -1,0 +1,33 @@
+@media screen and (max-width: 550px) {
+
+    header > h1 {
+        font-size: 1rem; 
+    }
+    .showBasket {
+        font-size: .8rem;
+    }
+    .products {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .product {
+        line-height: .8rem;
+    }
+    button {
+        margin-top: 1rem;
+    }
+    input {
+        padding: .5rem 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        gap: 1rem;
+    }
+    .products {
+        grid-template-columns: repeat(2,1fr);
+    }
+    input {
+        padding: .5rem 1rem;
+    }
+}

@@ -1,0 +1,99 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e4e4e4;
+    font-family: helvetica;
+    margin: 0;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 90%;
+    margin: auto;
+    gap: 1rem;
+}
+
+.product {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid;
+}
+
+
+.product > img {
+    width: 100%;
+}
+
+
+button {
+    display: block;
+    background-color: #00a2a4;
+    color: white;
+    padding: 4px 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+header {
+    background-color: #00a2a4;
+    padding: 8px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+input {
+    padding: 1rem 3rem;
+    border: 1px solid gray;
+    border-radius: 16px;
+}
+
+
+.basket {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.basket > img {
+    height: 100px;
+    width: auto;
+}
+
+
+header > div > h3:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.btn {
+    margin-top: 1rem;
+}
+
+.homeBtn{
+    padding: 2rem;
+    background-color: yellow;
+    color: black;
+    font-size: 32px;
+    border-radius: 50%;
+}
+
+.homeBtn:hover {
+    transform: scale(1.2);
+}
+
+.product > h4 {
+    color: red;
+    font-size: 12px;
+}
