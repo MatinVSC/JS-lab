@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <script src="./app.js" defer></script>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Countries</h1>
+    <input type="text" placeholder="search in countries..." onkeyup="handleSearch()">
+    <ul id="root"></ul>
+    <input type="text" placeholder="Country Name" id="newCountry" onkeyup="handleEnter()">
+    <br>
+    <input type="number" id="addNumber" placeholder="user number">
+    <button onclick="handleAdd()">ADD Country</button>
+</body>
+</html>

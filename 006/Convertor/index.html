@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form-container">
+        <div class="form-body">
+          <div class="converter-form">
+            <label htmlFor="{label}">Amount</label>
+            <input
+              type="text"
+              id="amount"
+            />
+
+            <div class="row">
+              <label htmlFor="{`${label}-select`}">From</label>
+              <div class="select">
+                <select
+                  id="from-select"
+                >
+                  <!-- fill with js -->
+                </select>
+              </div>
+
+              <label htmlFor="{`${label}-select`}">To</label>
+              <div class="select">
+                <select
+                  id="to-select"
+                >
+                  <!-- fill with js -->
+                </select>
+              </div>
+
+              <button onclick="handleResult()">Convert</button>
+            </div>
+          </div>
+
+          <div>
+            Result is: <span id="result">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
