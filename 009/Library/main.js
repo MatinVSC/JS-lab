@@ -62,6 +62,12 @@ function renderBasket(userBasket) {
       updateBookCount(BASKET[key], inputBsket.value);
     }
   })
+
+  setLocalStorage(BASKET)
+}
+
+function setLocalStorage (newProduct) {
+  localStorage.setItem('product', JSON.stringify(newProduct))
 }
 
 function renderLoginPage () {
@@ -172,6 +178,19 @@ function updateBookCount(basket, counter) {
   calcTotalPrice(BASKET);
 }
 
+function getLocalStorage () {
+
+  let localStorageBasket = JSON.parse(localStorage.getItem('product'));
+
+  if (localStorageBasket) {
+    BASKET = localStorageBasket;
+  } else {
+    BASKET = [];
+  }
+
+  renderLibrary(BOOKS)
+}
+
 
 function backToHome() {
   renderLibrary(BOOKS);
@@ -185,6 +204,7 @@ showUserBasket.addEventListener("click", () => {
   renderBasket(BASKET);
   calcTotalPrice(BASKET);
 });
+window.addEventListener('load', getLocalStorage);
 
 flag = false
 if (LogInPage.style.display = 'inline') {
