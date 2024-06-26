@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin:  0 auto;
+
+}
+
+.post {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #ddd;
+    border-radius: 8px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.post > span {
+    color: red;
+}
+
+.post > p{
+    color: green;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.pagination button {
+    margin: 8px;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.card.is-loading .image, .card.is-loading h2, .card.is-loading p {
+    background: #eee;
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    border-radius: 5px;
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+}
+.card.is-loading .image {
+    height: 200px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.card.is-loading h2 {
+    height: 30px;
+}
+.card.is-loading p {
+    height: 70px;
+}
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+   }
+}
+
+
+.container  {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #ddd;
+    padding: 1rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    top: 0;
+    box-shadow: 2px 2px 10px 0px rgba(128, 128, 128, .5);
+    transition: .5s;
+}
+
+.active {
+    background-color: blue;
+    cursor: pointer;
+    color: #ddd;
+}
+
+.scroll {
+    background-color: aqua;
+    color: #ddd;
+    position: sticky;
+    color: #222;
+}
+
+.darkMod {
+    background-color: black;
+    color: #ddd;
+}
+
+.darkMod .post {
+    background-color:gray;
+}
+
+.darkMod header {
+    color: black;
+}
+
