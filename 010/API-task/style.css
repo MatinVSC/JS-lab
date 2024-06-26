@@ -1,0 +1,40 @@
+body {
+    margin:  0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.post {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #ddd;
+    border-radius: 8px;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.post > span {
+    color: red;
+}
+
+.post > p{
+    color: green;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.pagination button {
+    margin: 8px;
+    cursor: pointer;
+    padding: 1rem;
+}
