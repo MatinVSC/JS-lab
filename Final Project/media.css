@@ -1,0 +1,139 @@
+@media (max-width: 640px) { 
+
+    .container-header {
+        display: none;
+    }
+    .mobile-head {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 4rem;
+    }
+    .mobile-head a {
+        font-size: 1.5rem;
+        border: 1px solid #00a2a4;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    .mobile-head svg {
+        margin-left: 3rem;
+        cursor: pointer;
+    }
+    .mobile-head svg:hover {
+        transform: scale(1.1);
+    }
+    .menu {
+        display: none;
+        border: 1px solid;
+        margin-top: 2rem;
+        border-radius: 20px;
+        background-color: #ddd;
+        animation: menu 1s;
+    }
+
+    @keyframes menu {
+        0% {
+            transform: scale(1);
+            opacity: 0;
+        }
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        transition: all 1s ease-in-out 0s;
+    }
+    .menu a {
+        font-size: 1.5rem;
+    }
+    .menu li:hover {
+        transform: scale(1.1);
+    }
+    .close {
+        display: none;
+    }
+
+    .list-category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-fli {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-right: 0;
+        gap: 2.5rem;
+    }
+    .list-fli li, span {
+      font-size: 1.5rem;
+    }
+    .sort {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search {
+        margin: 4rem 0;
+    }
+
+    .root-product {
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 3rem;
+        margin-top: 3rem;
+    }
+
+    .swiper {
+        width: 80vw;
+        height: 45vw;
+    }
+
+    .users p {
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+
+    .navigation {
+        grid-template-columns: 50% 50%;
+    }
+
+    .nav-img {
+        width: 100%;
+        height: 90%;
+    }
+
+    .basket-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .Basket-info h5 {
+        left: 0;
+        bottom: 0;
+    }
+ }
+
+ @media (max-width: 420px) {
+    .root-product {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .navigation {
+        grid-template-columns: 50% 40%;
+    }
+
+    .nav-img {
+        width: 120%;
+        height: 70%;
+    }
+ }
