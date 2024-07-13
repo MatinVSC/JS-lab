@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Priject for JS-lab</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./app.js" defer></script>
+</head>
+<header>
+  <div class="container-header">
+    <div class="icon-head">
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="100px" height="100px"><path d="M 13 4 C 8.0414839 4 4 8.0414839 4 13 L 4 37 C 4 41.958516 8.0414839 46 13 46 L 37 46 C 41.958516 46 46 41.958516 46 37 L 46 13 C 46 8.0414839 41.958516 4 37 4 L 13 4 z M 13 6 L 37 6 C 40.877484 6 44 9.1225161 44 13 L 44 37 C 44 40.877484 40.877484 44 37 44 L 13 44 C 9.1225161 44 6 40.877484 6 37 L 6 13 C 6 9.1225161 9.1225161 6 13 6 z M 25 10 C 24.416854 9.9996351 23.780571 10.399481 23.574219 11.035156 L 20.560547 20.3125 L 10.804688 20.3125 C 10.136686 20.3125 9.5591374 20.793099 9.3789062 21.347656 C 9.1986753 21.902213 9.3833562 22.630866 9.9238281 23.023438 L 17.816406 28.757812 L 14.802734 38.035156 C 14.59563 38.670276 14.873784 39.367852 15.345703 39.710938 C 15.817628 40.054023 16.566918 40.105435 17.107422 39.712891 L 25 33.978516 L 32.892578 39.712891 C 33.433646 40.105512 34.183315 40.055291 34.654297 39.712891 C 35.125279 39.370491 35.403619 38.672787 35.197266 38.037109 L 32.183594 28.759766 L 40.076172 23.025391 C 40.616648 22.63282 40.801325 21.904166 40.621094 21.349609 C 40.440863 20.795052 39.863315 20.314453 39.195312 20.314453 L 29.439453 20.314453 L 26.425781 11.037109 C 26.21992 10.401565 25.583146 10.000365 25 10 z M 25 13.121094 L 27.335938 20.310547 L 22.664062 20.310547 L 25 13.121094 z M 22.015625 22.310547 L 27.984375 22.310547 L 29.833984 27.988281 L 25 31.503906 L 20.166016 27.988281 L 22.015625 22.310547 z M 12.347656 22.3125 L 19.912109 22.3125 L 18.464844 26.755859 L 12.347656 22.3125 z M 30.087891 22.314453 L 37.650391 22.314453 L 31.537109 26.757812 L 30.087891 22.314453 z M 19.519531 29.992188 L 23.300781 32.740234 L 17.179688 37.1875 L 19.519531 29.992188 z M 30.480469 29.992188 L 32.820312 37.189453 L 26.699219 32.740234 L 30.480469 29.992188 z M 33.296875 38.650391 L 33.296875 38.654297 L 33.294922 38.654297 C 33.294502 38.652997 33.297275 38.651691 33.296875 38.650391 z"/></svg>
+      <span>star shop</span>
+    </div>
+    <div class="list-heah">
+      <ul>
+        <li>
+          <a class="home" href="#goHome">home</a>
+        </li>
+        <li>
+          <a href="#goProducts">products</a>
+        </li>
+        <li>
+          <a href="#goContanct">Contact</a>
+        </li>
+      </ul>
+    </div>
+        <div class="Login-head">
+          <svg class="showBasket" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+            <defs>
+            </defs>
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+              <path d="M 72.975 58.994 H 31.855 c -1.539 0 -2.897 -1.005 -3.347 -2.477 L 15.199 13.006 H 3.5 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 14.289 c 1.539 0 2.897 1.005 3.347 2.476 l 13.309 43.512 h 36.204 l 10.585 -25.191 H 45 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 41.5 c 1.172 0 2.267 0.587 2.915 1.563 s 0.766 2.212 0.312 3.293 L 76.201 56.85 C 75.655 58.149 74.384 58.994 72.975 58.994 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              <circle cx="28.88" cy="74.33" r="6.16" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+              <circle cx="74.59" cy="74.33" r="6.16" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+            </g>
+            </svg>
+            <ul class="login">
+              <a href="#">Login</a>
+            </ul>
+            <span style="color: red;" class="basketLength"></span>
+        </div>
+      </div>
+
+      <div class="mobile-head">
+        <div>
+          <ul class="login">
+            <a onclick="renderLoginPage()" href="#">Login</a>
+          </ul>
+        </div>
+         <div class="basket-head">
+         <svg class="showBasketMobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+          <defs>
+          </defs>
+          <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+            <path d="M 72.975 58.994 H 31.855 c -1.539 0 -2.897 -1.005 -3.347 -2.477 L 15.199 13.006 H 3.5 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 14.289 c 1.539 0 2.897 1.005 3.347 2.476 l 13.309 43.512 h 36.204 l 10.585 -25.191 H 45 c -1.933 0 -3.5 -1.567 -3.5 -3.5 s 1.567 -3.5 3.5 -3.5 h 41.5 c 1.172 0 2.267 0.587 2.915 1.563 s 0.766 2.212 0.312 3.293 L 76.201 56.85 C 75.655 58.149 74.384 58.994 72.975 58.994 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+            <circle cx="28.88" cy="74.33" r="6.16" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+            <circle cx="74.59" cy="74.33" r="6.16" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+          </g>
+          </svg>
+          <span style="color: red;" class="basketLengtMobile">()</span>
+        </div>
+          <div>
+          <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+            <defs>
+            </defs>
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+              <path d="M 67 52.671 H 23 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 44 c 1.104 0 2 0.896 2 2 S 68.104 52.671 67 52.671 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              <path d="M 67 64.013 H 23 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 44 c 1.104 0 2 0.896 2 2 S 68.104 64.013 67 64.013 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              <path d="M 67 41.329 H 23 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 44 c 1.104 0 2 0.896 2 2 S 68.104 41.329 67 41.329 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              <path d="M 67 29.987 H 23 c -1.104 0 -2 -0.896 -2 -2 s 0.896 -2 2 -2 h 44 c 1.104 0 2 0.896 2 2 S 68.104 29.987 67 29.987 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+              <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 24.813 0 45 20.187 45 45 C 90 69.813 69.813 90 45 90 z M 45 4 C 22.393 4 4 22.393 4 45 s 18.393 41 41 41 s 41 -18.393 41 -41 S 67.607 4 45 4 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+            </g>
+            </svg>
+            <svg class="close" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg>
+          </div>
+      </div>
+</header>
+
+<aside>
+  <div class="menu">
+    <ul>
+      <li>
+        <a class="home" href="#goHome">home</a>
+      </li>
+      <li>
+        <a href="#goProducts">products</a>
+      </li>
+      <li>
+        <a href="#goContanct">Contact</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+<body class="body">
+    <section class="navigation">
+      <div class="nav-img">
+        <img class="image1" src="./src/svg images/shoppingvector.png" alt="#">
+      </div>
+      <div class="info-nav">
+        <h1>BUY YOUR BEST PRODUCTSAT <span>HOME</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit a iste nobis et sed totam nesciunt, quos culpa corrupti inventore quam beatae tenetur dicta fugiat.</p>
+      </div>
+    </section>
+    <div class="title">
+      <h2 class="title-nav">Trending Products</h2>
+    </div>
+
+    <section class="list-category" id="goProducts">
+      <ul class="list-fli">
+        <div class="sort">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+            <defs>
+            </defs>
+            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+              <rect x="23.86" y="38.39" rx="0" ry="0" width="48.03" height="13.23" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
+              <rect x="0" y="14.08" rx="0" ry="0" width="13.23" height="61.83" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
+              <rect x="23.86" y="14.08" rx="0" ry="0" width="66.14" height="13.23" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
+              <rect x="23.86" y="62.69" rx="0" ry="0" width="25.12" height="13.23" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) "/>
+            </g>
+            </svg>
+        <span>:  Sort</span>
+        </div>
+        
+        <li class="lowPrice">lowest price</li>
+        <li class="hightPrice">highest price</li>
+        <li class="descPrice">descending</li>
+        <li class="ascePrice">ascending</li>
+      </ul>
+      <div class="search">
+        <input class="input-ser" type="text" placeholder="search in products ...">
+      </div>
+    </section>
+
+    <div class="container">
+        <section class="root">
+          <section class="root-product">
+          <div class="card is-loading">
+            <div class="image"></div>
+            <div class="content">
+              <h2></h2>
+              <p></p>
+            </div>
+          </div>
+          </section>
+        </section>
+      </div>
+
+      <div class="feedback">
+        <h3>Customer Feedback</h3>
+      </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">slider 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        ...
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <footer id="goContanct">
+      <div class="footer-con">
+        <div class="foot-title">
+          <h5>Made with <span>♥</span>  by Matin Rahmati</h5>
+        </div>
+        <div class="foot-icon">
+          <a href="https://github.com/MatinVSC" class="fa fa-github"></a>
+          <a href="https://t.me/MRamooBIT" class="fa fa-telegram"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
